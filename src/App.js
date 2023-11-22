@@ -14,6 +14,9 @@ function App() {
   function sonrakiFilm() {
     sira === movies.length - 1 ? setSira(1) : setSira(sira + 1);
   }
+  const oncekiFilm = () => {
+    sira === 1 ? setSira(movies.length - 1) : setSira(sira - 1);
+  };
 
   const addFavHandler = () => {
     const select = movies[sira];
@@ -45,6 +48,12 @@ function App() {
           <Movie sira={sira} />
 
           <div className="flex gap-3 justify-end py-3">
+            <button
+              onClick={oncekiFilm}
+              className="select-none px-4 py-2 border border-blue-700 text-blue-700 hover:border-blue-500 hover:text-blue-500"
+            >
+              Önceki
+            </button>
             <button
               onClick={sonrakiFilm}
               className="select-none px-4 py-2 border border-blue-700 text-blue-700 hover:border-blue-500 hover:text-blue-500"
