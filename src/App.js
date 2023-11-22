@@ -54,7 +54,7 @@ function App() {
             <button
               onClick={oncekiFilm}
               disabled={sira === 0 ? true : false}
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 active:border-b-0 rounded "
+              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 active:border-b-0 rounded disabled:cursor-not-allowed disabled:bg-blue-500 disabled:border-b-0 disabled:opacity-50 "
             >
               Önceki
             </button>
@@ -67,7 +67,7 @@ function App() {
             <button
               onClick={sonrakiFilm}
               disabled={sira === 19 ? true : false}
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 active:border-b-0 rounded"
+              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 active:border-b-0 rounded disabled:cursor-not-allowed disabled:bg-blue-500 disabled:border-b-0 disabled:opacity-50 "
             >
               Sıradaki
             </button>
