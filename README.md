@@ -49,7 +49,7 @@ Proje `movies.js` dosyasında yer alan filmleri sırayla görüntüleyebildiniz 
 
 ### Esnek Görevler
 
-- [ ] Filmler arasında gezinmeyi kolaylaştırmak için bir "Önceki", bir de "Başa dön" butonu ekleyin. Bunları görüntülemeniz gereken yerleri bulun ve ekleyin.
+- [x] Filmler arasında gezinmeyi kolaylaştırmak için bir "Önceki", bir de "Başa dön" butonu ekleyin. Bunları görüntülemeniz gereken yerleri bulun ve ekleyin.
 
 - [ ] Proje stillerini kendi istediğiniz şekilde değiştirmeye çalışın.
 

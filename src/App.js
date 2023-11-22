@@ -15,7 +15,10 @@ function App() {
     sira === movies.length - 1 ? setSira(1) : setSira(sira + 1);
   }
   const oncekiFilm = () => {
-    sira === 1 ? setSira(movies.length - 1) : setSira(sira - 1);
+    sira === 0 ? setSira(movies.length - 1) : setSira(sira - 1);
+  };
+  const basaDon = () => {
+    setSira(0);
   };
 
   const addFavHandler = () => {
@@ -53,6 +56,12 @@ function App() {
               className="select-none px-4 py-2 border border-blue-700 text-blue-700 hover:border-blue-500 hover:text-blue-500"
             >
               Önceki
+            </button>
+            <button
+              onClick={basaDon}
+              className="select-none px-4 py-2 border border-blue-700 text-blue-700 hover:border-blue-500 hover:text-blue-500"
+            >
+              Başa Dön
             </button>
             <button
               onClick={sonrakiFilm}
