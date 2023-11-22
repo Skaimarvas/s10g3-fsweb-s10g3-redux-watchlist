@@ -12,10 +12,10 @@ function App() {
   const dispatch = useDispatch();
 
   function sonrakiFilm() {
-    sira === movies.length - 1 ? setSira(1) : setSira(sira + 1);
+    setSira(sira + 1);
   }
   const oncekiFilm = () => {
-    sira === 0 ? setSira(movies.length - 1) : setSira(sira - 1);
+    setSira(sira - 1);
   };
   const basaDon = () => {
     setSira(0);
@@ -53,6 +53,7 @@ function App() {
           <div className="flex gap-3 justify-end py-3">
             <button
               onClick={oncekiFilm}
+              disabled={sira === 0 ? true : false}
               className="select-none px-4 py-2 border border-blue-700 text-blue-700 hover:border-blue-500 hover:text-blue-500"
             >
               Önceki
@@ -65,6 +66,7 @@ function App() {
             </button>
             <button
               onClick={sonrakiFilm}
+              disabled={sira === 19 ? true : false}
               className="select-none px-4 py-2 border border-blue-700 text-blue-700 hover:border-blue-500 hover:text-blue-500"
             >
               Sıradaki
