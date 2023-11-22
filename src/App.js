@@ -34,14 +34,14 @@ function App() {
           to="/"
           exact
           className="py-3 px-6 "
-          activeClassName="bg-white shadow-sm text-blue-600"
+          activeClassName="bg-white shadow-xl text-blue-600"
         >
           Filmler
         </NavLink>
         <NavLink
           to="/listem"
           className="py-3 px-6 "
-          activeClassName="bg-white shadow-sm text-blue-600"
+          activeClassName="bg-white shadow-xl text-blue-600"
         >
           Listem
         </NavLink>
@@ -54,25 +54,25 @@ function App() {
             <button
               onClick={oncekiFilm}
               disabled={sira === 0 ? true : false}
-              className="select-none px-4 py-2 border border-blue-700 text-blue-700 hover:border-blue-500 hover:text-blue-500"
+              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 active:border-b-0 rounded "
             >
               Önceki
             </button>
             <button
               onClick={basaDon}
-              className="select-none px-4 py-2 border border-blue-700 text-blue-700 hover:border-blue-500 hover:text-blue-500"
+              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 active:border-b-0 rounded"
             >
               Başa Dön
             </button>
             <button
               onClick={sonrakiFilm}
               disabled={sira === 19 ? true : false}
-              className="select-none px-4 py-2 border border-blue-700 text-blue-700 hover:border-blue-500 hover:text-blue-500"
+              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 active:border-b-0 rounded"
             >
               Sıradaki
             </button>
             <button
-              className="select-none px-4 py-2 bg-blue-700 hover:bg-blue-600 text-white"
+              className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 border-b-4 border-green-700 hover:border-green-500 active:border-b-0 rounded"
               onClick={() => addFavHandler()}
             >
               Listeme ekle
