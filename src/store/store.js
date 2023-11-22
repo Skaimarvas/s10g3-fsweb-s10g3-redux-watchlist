@@ -5,9 +5,11 @@ import {
 } from "redux";
 import { movieReducer } from "./reducers/movieReducer";
 import logger from "redux-logger";
+import { favoriteReducer } from "./reducers/favoriteReducer";
 
-// const reducer = combineReducers({
-//     movies : movieReducer;
-// })
+const reducer = combineReducers({
+  movies: movieReducer,
+  favorites: favoriteReducer,
+});
 
-export const store = createStore(movieReducer, applyMiddleware(logger));
+export const store = createStore(reducer, applyMiddleware(logger));
