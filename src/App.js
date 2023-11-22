@@ -4,6 +4,13 @@ import Movie from "./components/Movie";
 import FavMovie from "./components/FavMovie";
 import { useDispatch, useSelector } from "react-redux";
 import { addFavoriteMovie } from "./store/actions/favoriteActions";
+import {
+  CSSTransition,
+  SwitchTransition,
+  TransitionGroup,
+} from "react-transition-group";
+import "./App.css";
+
 function App() {
   const [sira, setSira] = useState(0);
   const favMovies = useSelector((store) => store.favorites.favMovies);
@@ -48,7 +55,11 @@ function App() {
       </nav>
       <Switch>
         <Route exact path="/">
-          <Movie sira={sira} />
+          <SwitchTransition mode="out-in">
+            <CSSTransition key={sira} classNames="movie" timeout={300}>
+              <Movie sira={sira} />
+            </CSSTransition>
+          </SwitchTransition>
 
           <div className="flex gap-3 justify-end py-3">
             <button

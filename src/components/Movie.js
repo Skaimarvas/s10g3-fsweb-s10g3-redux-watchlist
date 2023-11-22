@@ -5,7 +5,7 @@ export default function Movie(props) {
   const movie = movies[props.sira];
 
   return (
-    <div className="flex bg-white shadow-xl items-start elementToFadeInAndOut ">
+    <div className="flex bg-white shadow-xl items-start">
       <img
         src={movie.posterUrl}
         alt={movie.title}
