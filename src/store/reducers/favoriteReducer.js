@@ -8,7 +8,12 @@ const initialState = {
 export const favoriteReducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_FAVORITE:
-      return { ...state, favMovies: [...state.favMovies, action.payload] };
+      return {
+        ...state,
+        favMovies: !state.favMovies.includes(action.payload)
+          ? [...state.favMovies, action.payload]
+          : state.favMovies,
+      };
     case DELETE_FAVORITE:
       return {
         ...state,
