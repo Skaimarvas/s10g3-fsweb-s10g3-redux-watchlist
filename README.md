@@ -41,11 +41,11 @@ Proje `movies.js` dosyasında yer alan filmleri sırayla görüntüleyebildiniz 
 
 ### Görev 3: Projeye redux-logger eklemek
 
-- [ ] Projenize [redux-logger](https://github.com/LogRocket/redux-logger) paketini ekleyin.
+- [x] Projenize [redux-logger](https://github.com/LogRocket/redux-logger) paketini ekleyin.
 
-- [ ] Dokümantasyonunda tarif edildiği gibi projenize eklemeye çalışın. Sorun yaşarsanız hap bilgiler içerisindeki örneği takip edin.
+- [x] Dokümantasyonunda tarif edildiği gibi projenize eklemeye çalışın. Sorun yaşarsanız hap bilgiler içerisindeki örneği takip edin.
 
-- [ ] Store ile ilgili değişiklikler yaptığınızda logger paketinin vermiş olduğu logları inceleyin.
+- [x] Store ile ilgili değişiklikler yaptığınızda logger paketinin vermiş olduğu logları inceleyin.
 
 ### Esnek Görevler
 
